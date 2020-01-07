@@ -155,3 +155,27 @@ def armstrong_number():
     print(sum)
 
 armstrong_number()
+
+Q11.
+
+def multiple():
+    a=int(input('enter a number '))
+    b=int(input('enter another number'))
+
+
+    if a > b:
+        great=a
+        short=b
+    else:
+        great=b
+        short=a
+
+    for i in range(2,short+1):
+        if (great%i != 0 and short%i !=0):
+            print("numbers are co prime")
+            break
+        else:
+            print(" numbers are not co prime")
+            break
+
+multiple()
