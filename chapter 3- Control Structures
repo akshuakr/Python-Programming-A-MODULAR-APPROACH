@@ -125,3 +125,18 @@ def palindrome():
         print('the number is not pelindrome/False')
 
 palindrome()
+
+Q9.
+
+def sum_of_digits():
+    number=int(input('enter the number '))
+
+    sum=0
+    while(number>0):
+        reminder = number % 10
+        sum = sum + reminder
+        number = number//10
+
+    print(sum)
+
+sum_of_digits()
