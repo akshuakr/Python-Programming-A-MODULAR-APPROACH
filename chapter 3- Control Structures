@@ -140,3 +140,18 @@ def sum_of_digits():
     print(sum)
 
 sum_of_digits()
+
+Q10.
+
+def armstrong_number():
+    number=int(input('enter the number '))
+
+    sum=0
+    while(number>0):
+        reminder = number % 10
+        sum = sum + (reminder ** 3)
+        number = number//10
+
+    print(sum)
+
+armstrong_number()
