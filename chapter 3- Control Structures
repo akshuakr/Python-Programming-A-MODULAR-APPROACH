@@ -1,0 +1,109 @@
+Q3.
+
+def perfect():
+    a=0
+    number=int(input("enter a number to check whether it is perfect or not: "))
+    for i in range(1,number):
+        if (number % i ==0):
+            a = a + i
+
+        else:
+            continue
+    if (a == number) :
+        print("the number is perfect")
+    else:
+        print("the number is not perfect")
+
+perfect()
+
+Q4.
+
+def multiple():
+    a=int(input('enter a number '))
+    b=int(input('enter another number'))
+    c= a*b
+    if a > b:
+        great=a
+    else:
+        great=b
+    for i in range(1,c+1):
+        if (great % a==0 & great % b==0):
+            lcm= great
+        else:
+            great += 1
+
+    print(lcm)
+multiple()
+
+Q5.
+
+def multiple():
+    a=int(input('enter a number '))
+    b=int(input('enter another number'))
+
+
+    if a > b:
+        great=a
+        short=b
+    else:
+        great=b
+        short=a
+
+    for i in range(1,short+1):
+        if (great%i==0 and short%i ==0):
+            hcf=i
+    print(hcf)
+multiple()
+
+Q7
+(a) a little error for odd power of x(if entered)
+
+import math
+
+def series(r,x):
+
+
+    j=1
+    i=int(r/2)
+    k=0
+    for n in range(1,i+1):
+        y = math.factorial(2 * n)
+        a = -((x ** (2 * n)) / y)
+        j=-j-a
+        k=k+1
+
+    if k%2==0:
+        c=j
+    else:
+        c=-j
+    return c
+
+def akr():
+    k=int(input("enter the value of n "))
+    akshu=int(input("enter the value of x : "))
+    y=series(k,akshu)
+    print(y)
+
+akr()
+
+(b)
+
+import math
+
+def exp(n,x):
+    j=0
+
+
+    for i in range(0,n+1):
+        y=math.factorial(i)
+        k=(x**i)/(y)
+        j= j + k
+    return j
+
+def akr():
+    a= int(input("enter the value of n : "))
+    b=int(input('enter the value of x : '))
+    y=exp(a,b)
+    print("the value of series is ",y)
+
+akr()
