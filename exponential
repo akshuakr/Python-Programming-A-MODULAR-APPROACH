@@ -1,0 +1,19 @@
+import math
+
+def exp(n,x):
+    j=0
+
+
+    for i in range(0,n+1):
+        y=math.factorial(i)
+        k=(x**i)/(y)
+        j= j + k
+    return j
+
+def akr():
+    a= int(input("enter the value of n : "))
+    b=int(input('enter the value of x : '))
+    y=exp(a,b)
+    print("the value of series is ",y)
+
+akr()
