@@ -107,3 +107,21 @@ def akr():
     print("the value of series is ",y)
 
 akr()
+
+Q8.
+
+def palindrome():
+    number=int(input('enter the number '))
+    temp = number
+    reverse=0
+    while(number>0):
+        reminder = number % 10
+        reverse = reverse * 10 + reminder
+        number = number // 10   #( // returns integer value and / returns float value)
+
+    if reverse == temp:
+        print('the number is pelindrome/True')
+    else:
+        print('the number is not pelindrome/False')
+
+palindrome()
