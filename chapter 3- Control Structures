@@ -143,16 +143,36 @@ sum_of_digits()
 
 Q10.
 
+program to check armstrong number
+
 def armstrong_number():
-    number=int(input('enter the number '))
+    a=int(input('enter the number '))
+    number=a
 
     sum=0
     while(number>0):
         reminder = number % 10
         sum = sum + (reminder ** 3)
         number = number//10
+    if a==sum:
+        print("the number is armstrong")
+    else:
+        print('number is not armstrong')
 
-    print(sum)
+armstrong_number()
+
+program to print armstrong numbers in range of 1 to 1000
+
+def armstrong_number():
+    for i in range(1,1000):
+        number=i
+        sum=0
+        while (number > 0):
+            reminder = number % 10
+            sum = sum + (reminder ** 3)
+            number = number // 10
+        if i== sum:
+                print(i)
 
 armstrong_number()
 
