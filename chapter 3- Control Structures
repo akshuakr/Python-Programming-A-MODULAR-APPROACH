@@ -199,3 +199,16 @@ def multiple():
             break
 
 multiple()
+
+Q13.
+
+def multiply():
+    a=int(input('enter a number '))
+    b=int(input('enter another number '))
+    sum=0
+    for i in range(1,b+1):
+        sum = sum + a
+        print(str(b)+' + ',end='')
+    print(' = ' + str(sum))
+
+multiply()
