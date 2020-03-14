@@ -15,3 +15,7 @@ def f():
     print('inside f,after calling g,', 'a= ',a)
 f()
 print('after calling f,','a= ',a)
+
+
+gloaba x  : make global variable
+nonlocal x : change the value in next enclosing scope
