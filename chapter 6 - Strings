@@ -1,1 +1,14 @@
+1.
+
+def repl():
+    a=input('enter the string:')
+    b=''
+    for i in range(len(a)):
+        if a[i] == a[i-1]:
+            b = b[0:i]+'*'
+        else:
+            b = b +a[i]
+    print(b)
+
+repl()
 
