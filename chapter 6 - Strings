@@ -25,3 +25,12 @@ def anagrams():
     else:
         print(False)
 anagrams()
+
+3.
+
+def nowords():
+    a = input('enter the sentence:')
+    b = a.split(' ')
+    c = len(b)
+    print(c)
+nowords()
