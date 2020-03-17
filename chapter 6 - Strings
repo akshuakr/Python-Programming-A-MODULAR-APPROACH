@@ -12,3 +12,16 @@ def repl():
 
 repl()
 
+2.
+
+def anagrams():
+    a = input('enter first string: ')
+    x = sorted(a)
+    b = input('enter second string: ')
+    y = sorted(b)
+
+    if x == y:
+        print(True)
+    else:
+        print(False)
+anagrams()
