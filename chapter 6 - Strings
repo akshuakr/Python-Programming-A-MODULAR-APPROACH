@@ -34,3 +34,12 @@ def nowords():
     c = len(b)
     print(c)
 nowords()
+
+or
+
+def numberofwords(s):
+      count=1
+      for i in s:
+         if i==" ":
+            count+=1
+      print("number of words are :",count)
